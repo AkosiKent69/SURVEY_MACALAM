@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🔥 The Ultimate Vibe Check Survey 🔥</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="meme-background"></div>
+    <div class="survey-container" id="surveyCard">
+        <div class="meme-header">
+            <h1>🎮 THE ULTIMATE VIBE CHECK 🎮</h1>
+            <p class="subtitle">⚡ Drop your stats, fam! No cap! ⚡</p>
+        </div>
+        
+        <form id="surveyForm" novalidate>
+            <div class="form-group">
+                <label for="name">
+                    <span class="emoji">👤</span> What do they call you, legend?
+                </label>
+                <input type="text" id="name" name="name" placeholder="Enter your epic name..." required>
+                <div class="char-counter" id="charCounter">
+                    <span class="counter-text">📝 0/50 characters</span>
+                </div>
+                <div class="error-message" id="nameError">
+                    <span class="error-emoji">❌</span> Yo, we need your name fam!
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="age">
+                    <span class="emoji">🎂</span> How many times you've been around the sun?
+                </label>
+                <input type="text" id="age" name="age" placeholder="Just numbers, no cap (e.g., 25)" required>
+                <div class="error-message" id="ageError">
+                    <span class="error-emoji">🚫</span> Bruh, age is a NUMBER not words!
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="email">
+                    <span class="emoji">📧</span> Where can we slide into your DMs?
+                </label>
+                <input type="email" id="email" name="email" placeholder="your.epic@email.com" required>
+                <div class="error-message" id="emailError">
+                    <span class="error-emoji">💀</span> That email ain't it chief!
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="favoriteNumber">
+                    <span class="emoji">🎲</span> Your lucky number (the GOAT number)?
+                </label>
+                <input type="text" id="favoriteNumber" name="favoriteNumber" placeholder="Drop that magic number!" required>
+                <div class="error-message" id="favoriteNumberError">
+                    <span class="error-emoji">🤦</span> Numbers only fam! (Like 7, not "seven")
+                </div>
+            </div>
+
+            <button type="submit" class="submit-btn">
+                <span class="btn-text">🚀 YEET THIS SURVEY! 🚀</span>
+            </button>
+        </form>
+
+        <div class="meme-footer">
+            <p>💯 Certified dank survey 💯</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
